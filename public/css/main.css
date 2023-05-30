@@ -124,3 +124,50 @@ nav {
 
 	border: 5px solid azure;
 }
+
+.podcast-page {
+	display: grid;
+	grid-template-columns: 25% 75%;
+}
+
+.video-navigator {
+	display: flex;
+	flex-direction: column;
+	background-color: #191c69;
+	color: azure;
+}
+
+.videos-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgb(72, 72, 72);
+}
+.video-navigator {
+	display: flex;
+	flex-direction: column;
+}
+.video-nav-list {
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.video-navigator h2 {
+	margin: 2rem;
+}
+
+.video {
+	margin: 3rem;
+}
+
+.video-nav-list a {
+	margin: 1rem;
+	text-decoration: none;
+	color: azure;
+}
+
+.videos-container p {
+	margin: 5rem;
+}

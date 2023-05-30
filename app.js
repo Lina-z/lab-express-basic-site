@@ -18,7 +18,7 @@ app.get("/gallery", (req, res, next) => {
 });
 
 app.get("/podcasts", (req, res, next) => {
-	res.sendFile(__dirname + "/views/works-page.html");
+	res.sendFile(__dirname + "/views/podcasts-page.html");
 });
 
 app.listen(3000, () => {
