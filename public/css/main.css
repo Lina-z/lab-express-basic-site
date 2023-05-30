@@ -37,14 +37,6 @@ nav {
 	justify-content: flex-end;
 }
 
-.gallery-container {
-	display: flex;
-}
-.gallery-container img {
-	width: 20%;
-	height: auto;
-}
-
 .about-page {
 	display: grid;
 	grid-template-columns: 25% 75%;
@@ -74,7 +66,8 @@ nav {
 .about-left-side-container p {
 	margin: 2rem;
 }
-.about-headline {
+.about-headline,
+.gallery-headers {
 	display: flex;
 	flex-direction: column;
 
@@ -82,15 +75,24 @@ nav {
 	justify-content: space-around;
 	padding: 2rem;
 }
-.about-headline h4 {
+.about-headline h4,
+.gallery-headers h4 {
 	align-self: flex-end;
 	margin-right: 20%;
 	font-family: "Orbitron", sans-serif;
 	font-weight: 200;
 }
-.about-headline h2 {
+.about-headline h2,
+.gallery-headers h2 {
+	font-size: 50px;
 	font-family: "Orbitron", sans-serif;
 	font-weight: 200;
+}
+
+.gallery-headers h4,
+.gallery-headers h2 {
+	padding: 0 5rem;
+	border: 2px solid azure;
 }
 
 .about-details {
@@ -159,15 +161,50 @@ nav {
 }
 
 .video {
-	margin: 3rem;
+	margin: 1rem;
 }
 
 .video-nav-list a {
-	margin: 1rem;
+	margin: 1rem 1rem;
 	text-decoration: none;
 	color: azure;
 }
 
 .videos-container p {
-	margin: 5rem;
+	margin-top: 0.2rem;
+	margin-bottom: 1rem;
+	margin-left: 10rem;
+	margin-right: 10rem;
+}
+
+.gallery-container {
+	margin: 5rem 10rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.gallery-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.gallery-container img {
+	width: 100%;
+	height: 100%;
+	border-radius: 20px;
+
+	z-index: 2;
+}
+
+.gallery-container button {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 10;
+	background-color: #191c69;
+	color: azure;
+	border-radius: 10px;
 }
