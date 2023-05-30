@@ -1,8 +1,126 @@
+/** @format */
+/*
+    main color: #191c69
+    Verylight color: azure;
+    grrey color: #727272;
+    darker greey:
+
+*/
+
 body {
-    color: white;
-    background-color: #191C69;
+	color: azure;
+	background-color: #191c69;
+	background-image: url("/images/space.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
 }
 
-a {
-    color: white;
+nav a {
+	color: #191c69;
+	text-decoration: none;
+	font-size: large;
+	font-weight: 900;
+	padding: 0.7rem;
+	font-family: "Orbitron", sans-serif;
+}
+nav a:last-child {
+	margin-right: 40px;
+}
+
+nav {
+	background-color: azure;
+	color: #191c69;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.gallery-container {
+	display: flex;
+}
+.gallery-container img {
+	width: 20%;
+	height: auto;
+}
+
+.about-page {
+	display: grid;
+	grid-template-columns: 25% 75%;
+}
+.about-body {
+	background-color: rgb(72, 72, 72);
+}
+.about-details {
+	margin: 0;
+	padding: 5rem;
+	border: 2px solid azure;
+}
+
+.about-left-side-container {
+	display: flex;
+	flex-direction: column;
+	background-color: #191c69;
+	align-items: center;
+}
+.about-left-side-container img {
+	width: 60%;
+	height: auto;
+	border: 2px solid azure;
+	margin: 2rem;
+}
+
+.about-left-side-container p {
+	margin: 2rem;
+}
+.about-headline {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+	justify-content: space-around;
+	padding: 2rem;
+}
+.about-headline h4 {
+	align-self: flex-end;
+	margin-right: 20%;
+	font-family: "Orbitron", sans-serif;
+	font-weight: 200;
+}
+.about-headline h2 {
+	font-family: "Orbitron", sans-serif;
+	font-weight: 200;
+}
+
+.about-details {
+	margin: 20%;
+}
+
+.home-page-container {
+	font-family: "Orbitron", sans-serif;
+	height: 100vh;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin: 5rem;
+	text-align: center;
+	letter-spacing: 1rem;
+}
+
+.home-page-body img {
+	padding: 5rem;
+	border: 2px solid azure;
+}
+.second-border {
+	/* width: 60%; */
+	padding: 5rem;
+	border: 3.5px solid azure;
+}
+.third-border {
+	padding: 5rem;
+
+	border: 5px solid azure;
 }
